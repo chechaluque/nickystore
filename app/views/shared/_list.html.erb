@@ -10,7 +10,7 @@
                 <h3><%= product.title %></h3>
 
                 <p class="product-price">
-                  <trong>Lps.</trong>  <%= product.price %>
+                   <%= number_to_currency(product.price, unit: "Lps. ", :precision => 0)  %>.00
                 </p>
               </div>
             </div>

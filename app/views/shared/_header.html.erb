@@ -6,24 +6,23 @@
       <span class="logo-dot accent-bg"></span>
     <% end %>
     </li>
-    <li class="active">
+    <li>
+      <%= link_to 'Home', root_path, style:"color:#3f51b5;" %>
+    </li>
+    <li>
       <%= link_to 'Store', shop_path, style:"color:#3f51b5;" %>
     </li>
-    <li class="divider"><span></span></li>
     <li>
-      <%= link_to 'Privacy', root_path, style:"color:#3f51b5;" %>
+      <%= link_to 'Admin', admin_dashboard_path, style:"color:#3f51b5;" %>
     </li>
-    <li>
-      <%= link_to 'Term Y Conditions', root_path, style:"color:#3f51b5;" %>
-    </li>
+  
+
 
   </ul>
 
   <div class="side-social">
     <a href="https://www.facebook.com/khole.barh.5"><i class="fa fa-facebook"></i></a>
-    <a href="#"><i class="fa fa-twitter"></i></a>
-    <a href="#"><i class="fa fa-google-plus"></i></a>
-    <a href="#"><i class="fa fa-pinterest"></i></a>
+
     <a href="#"><i class="fa fa-instagram"></i></a>
   </div>
 </div>
@@ -65,8 +64,8 @@
             <%= link_to 'Admin', admin_dashboard_path, style:"color:#3f51b5;" %>
           </li>
           <li>
-            <%= link_to  root_path, style:"color:#3f51b5;"  do %>
-              <i class="fa fa-paper-plane"></i>Contact
+            <%= link_to 'https://www.facebook.com/khole.barh.5', style:"color:#3f51b5;"  do %>
+              <i  class="fa fa-facebook" aria-hidden="true"></i> Facebook
             <% end %>
           </li>
 
