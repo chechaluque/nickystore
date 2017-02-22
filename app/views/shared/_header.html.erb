@@ -1,0 +1,88 @@
+<!-- Off screen navigation -->
+  <div id="sidr">
+  <ul>
+    <li><%= link_to root_path, class: "side-logo" do %>
+      NickyStore
+      <span class="logo-dot accent-bg"></span>
+    <% end %>
+    </li>
+    <li class="active">
+      <%= link_to 'Store', root_path %>
+    </li>
+    <li class="divider"><span></span></li>
+    <li>
+      <%= link_to 'Privacy', root_path %>
+    </li>
+    <li>
+      <%= link_to 'Term Y Conditions', root_path %>
+    </li>
+
+  </ul>
+
+  <div class="side-social">
+    <a href="https://www.facebook.com/khole.barh.5"><i class="fa fa-facebook"></i></a>
+    <a href="#"><i class="fa fa-twitter"></i></a>
+    <a href="#"><i class="fa fa-google-plus"></i></a>
+    <a href="#"><i class="fa fa-pinterest"></i></a>
+    <a href="#"><i class="fa fa-instagram"></i></a>
+  </div>
+</div>
+
+<div class="nav-container">
+  <nav class="navbar navbar-default">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse-navigation" aria-expanded="false">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        </button>
+        <a>
+          <%= link_to root_path, class: "navbar-brand" do %>
+            Nicky<span class="logo-dot accent-bg"></span>
+          <% end %>
+        </a>
+
+          <div class="bars">
+                <span class="bar top"></span>
+                <span class="bar middle"></span>
+                <span class="bar bottom"></span>
+            </div>
+        </a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="collapse-navigation">
+        <ul class="nav navbar-nav">
+          <li>
+            <%= link_to 'Home', root_path%>
+          </li>
+          <li>
+            <%= link_to 'Store', root_path %>
+          </li>
+          <li>
+            <%= link_to 'About', root_path %>
+          </li>
+          <li>
+            <%= link_to  root_path  do %>
+              <i class="fa fa-paper-plane"></i>Contact
+            <% end %>
+          </li>
+
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a href="#sidr" class="side-menu-opener">
+              <div class="bars">
+                    <span class="bar top"></span>
+                    <span class="bar middle"></span>
+                    <span class="bar bottom"></span>
+                </div>
+            </a>
+          </li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container -->
+  </nav>
+</div>
