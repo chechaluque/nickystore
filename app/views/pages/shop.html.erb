@@ -1,0 +1,59 @@
+<br>
+<header class="secondary">
+  <div class="background-image-holder parallax-background overlay" data-stellar-background-ratio="0.9">
+      <%= image_tag('nicky3.jpg', class: "background-image", alt: "Background") %>
+  </div>
+
+  <div class="container align-vertical hero">
+    <div class="row">
+      <div class="col-md-5 text-left">
+        <h1>Productos</h1>
+        <p>Puedes disfrutar de todos nuestros productos en esta sección.</p>
+      </div>
+    </div><!--end of row-->
+  </div><!--end of container-->
+</header>
+
+<section class="product-list">
+  <div class="container">
+    <% @products.each do |product| %>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="product">
+          <div class="row">
+            <div class="col-md-6 col-xs-12">
+              <div class="thumbnail">
+                <%= image_tag product.image %>
+              </div>
+            </div>
+            <div class="col-md-5 col-md-offset-1">
+              <div class="product-details">
+                <h2 class="product-title">
+                  <%= product.title %>
+                </h2>
+                <p class="product-price">
+                  <%= number_to_currency product.price %>
+                </p>
+                <p>
+                  <%= product.description %>
+                </p>
+
+                <a href="#" class="btn btn-default"><i class="fa fa-shopping-cart"></i> Add to cart</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!-- /.row -->
+    <% end %>
+  </div>
+</section>
+<div class="no-padding-top section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <a href="#" class="load-more"><i class="fa fa-ellipsis-h"></i></a>
+      </div>
+    </div><!-- /.row -->
+  </div><!-- /.container -->
+</div>
