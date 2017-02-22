@@ -1,8 +1,8 @@
 <section class="products-grid">
   <div class="container">
     <div class="row products-container">
-      <% @products.each do |product| %>
-      <% if product.id <= 3 %>
+      <% @productsorder.each do |product| %>
+
         <div class="col-md-4 col-sm-6 col-xs-12 product">
           <div class="thumbnail" style="background-image: url('<%= product.image %>');">
             <div class="product-details text-center">
@@ -16,7 +16,7 @@
             </div>
           </div>
         </div>
-        <% end %>
+
       <% end %>
     </div><!-- /.row -->
   </div><!-- /.container -->

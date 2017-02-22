@@ -32,7 +32,7 @@
                   <%= product.title %>
                 </h2>
                 <p class="product-price">
-                  <%= number_to_currency product.price %>
+                 <%= number_to_currency(product.price, unit: "Lps. ", :precision => 0)  %>
                 </p>
                 <p>
                   <%= product.description %>
